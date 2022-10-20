@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--link:css  (agregar el ccs, que es la carpeta)-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+
+    <header id="main-header">
+      <div class="container">
+        <h1>Ideas Digitales</h1>
+        <p>Investigación, Tecnología, Ciencia y Arte</p>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ideas Digitales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#noticias">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#empresa">Nuestra empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#valores">Valores</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Oficinas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Trujillo</a></li>
+                <li><a class="dropdown-item" href="#">Chiclayo</a></li>
+                <li><a class="dropdown-item" href="#">Cajamarca</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Chimbote</a></li>
+                <li><a class="dropdown-item" href="#">Lima</a></li>
+                <li><a class="dropdown-item" href="#">Huancayo</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Puno</a></li>
+                <li><a class="dropdown-item" href="#">Arequipa</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/tienda1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/tienda2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/tienda3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="nosotros" class="padded">
+      <div class="container">
+        <h2>Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium iste nihil illo, aut debitis delectus vel perspiciatis quaerat velit repudiandae molestiae, qui pariatur! Corporis aspernatur vero atque molestiae ipsum, fugit, voluptate repellat ea tenetur cupiditate eos laborum reprehenderit quisquam distinctio similique. Distinctio veritatis molestias nostrum cumque provident, ullam, quae et fugiat hic nulla quos sequi repellendus nisi quam nihil? Placeat dolores, eaque vero ut ex animi eius consectetur repellendus sequi modi officiis eum numquam aliquam quo exercitationem ullam. Sed natus, quasi earum voluptate minima adipisci error? Dignissimos porro, ducimus, animi aut, nobis possimus odit qui saepe reprehenderit harum quam!</p>
+      </div>
+    </section>
+
+    <section id="noticias" class="padded">
+      <div class="container">
+        <h2>Noticias</h2>
+        <div class="row">
+          <!--el lg. xl. xxl, etc. es para que las columnas de las noticias se coloquen una debajo de otra cuando la pantalla de achica, guiarse en brackpoints de bootstrap-->
+          <article class="col-lg">
+            <div class="ratio ratio-16x9">
+            <iframe src="https://player.vimeo.com/video/749678162?h=bee08befb4" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+            <h3>Noticia 1</h3>
+            <!--(p>lorem32)*2-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam nesciunt id accusamus delectus recusandae cupiditate, obcaecati minus rerum fugiat consectetur fugit, deserunt praesentium ullam, nisi quis voluptatum molestias assumenda excepturi vitae!</p>
+            <p>Atque est maiores repellendus, saepe sapiente iure quas illo aliquam! Officiis debitis ipsam assumenda ipsa soluta, accusantium omnis inventore vitae illo, tenetur, facilis ea voluptatum nostrum aperiam dolore laborum quas laboriosam nobis!</p>
+          </article>
+
+          <article class="col-lg">
+            <figure>
+              <img src="images/noticia2.jpg" alt="" class="img-fluid">
+            </figure>
+            <h3>Noticia 2 </h3>
+            <!--(p>lorem32)*2-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minima praesentium cupiditate dolore labore, nisi vitae nobis officia magnam corporis autem fuga necessitatibus itaque asperiores modi eum perferendis. Laborum soluta corrupti iure.</p>
+            <p>Neque impedit natus magni in ut, nemo, fugiat tempore maxime nisi, eius excepturi et. Possimus modi exercitationem adipisci a at excepturi cupiditate maiores quos rerum. Possimus dolorem laboriosam, eligendi ullam atque amet!</p>
+          </article>
+
+          <article class="col-lg">
+            <figure>
+              <img src="images/noticia3.jpg" alt="" class="img-fluid">
+            </figure>
+            <h3>Noticia 3</h3>
+            <!--(p>lorem32)*2-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sapiente eum deleniti! Dicta, perspiciatis iusto. Ab quibusdam, veniam animi, debitis suscipit sed soluta earum cupiditate ipsa enim esse explicabo, labore incidunt quis!</p>
+            <p>Fugit error, nam nostrum impedit eveniet voluptatum blanditiis earum. Error id mollitia voluptates sapiente! Rem nobis modi distinctio nulla fuga dolorem ut excepturi similique. Tempora tempore velit quisquam quibusdam natus, atque hic?</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!--section#historia>.container-->
+    <section id="historia" class="padded">
+      <div class="container">
+      <h2>Historia</h2>
+      <!--(p>lorem60)*2-->
+      <div class="row">
+        <div class="col">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit eius quam facilis veritatis alias explicabo debitis omnis voluptates unde minus enim dolores, eligendi eos modi nostrum illum? Enim non necessitatibus illum quia, aut laboriosam, corporis facere ab magnam eaque illo recusandae esse est dignissimos odio obcaecati soluta labore. Quae esse dolore, aliquam quo tenetur necessitatibus suscipit adipisci ullam ipsa repudiandae.</p>
+          <p>Incidunt repudiandae ex aliquam quaerat quam delectus similique magni culpa debitis saepe reprehenderit, modi hic sint atque dolores fugit est facere itaque sequi assumenda unde facilis, laboriosam rerum! Earum aspernatur incidunt facilis alias non? Sit modi cupiditate pariatur voluptatem eum, harum ab similique facilis nihil necessitatibus? Optio et nemo harum nulla corporis eum nisi aliquam nam quae officiis? Magni, quod.</p>
+        </div>
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      </div>
+    </section>
+
+    <section id="empresa">
+      <div class="container">
+        <div class="row">
+          <div class="col-md align-self-center">
+          <h2>Nuestra empresa</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat aspernatur error ducimus eos voluptates sequi reprehenderit libero officiis enim, earum vel distinctio modi cupiditate tempora dolore facilis ex atque corporis sapiente!</p>
+        </div>
+          <figure class="col">
+          <img src="images/foto-empresa.jpg" alt="" class="img-fluid">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="valores" class="padded">
+      <div class="container">
+        <h2>valores</h2>
+        <div class="row justify-content-center">
+          <!--article.col*5>h3{valor $}+p>lorem24-->
+          <article class="col-xl col-lg-4 col-sm-6">
+            <i class="bi bi-medium"></i>
+            <h3>valor 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quae labore similique pariatur quod eius ea vero, itaque beatae facilis accusantium libero, veritatis reiciendis.</p>
+          </article>
+          <article class="col-xl col-lg-4 col-sm-6">
+            <i class="bi bi-hurricane"></i>
+            <h3>valor 2</h3>
+            <p>Odit ea dicta voluptatum, assumenda, officia fuga consequatur pariatur doloribus modi delectus, rem iure explicabo voluptatibus odio nostrum quo at quibusdam omnis maiores architecto!</p>
+          </article>
+          <article class="col-xl col-lg-4 col-sm-6">
+            <i class="bi bi-image-alt"></i>
+            <h3>valor 3</h3>
+            <p>Numquam, reiciendis. Quibusdam cum illum placeat? Eveniet tempora nam aut dolorem suscipit ex nemo, fugit vero animi quidem, possimus sit voluptates minus consequatur ipsum!</p>
+          </article>
+          <article class="col-xl col-lg-4 col-sm-6">
+            <i class="bi bi-lightbulb-fill"></i>
+            <h3>valor 4</h3>
+            <p>Id non voluptate reprehenderit culpa, natus obcaecati minus et perspiciatis ipsam ut, eligendi aliquam molestiae nesciunt, ad sint assumenda adipisci ducimus magni repellat! Incidunt!</p>
+          </article>
+          <article class="col-xl col-lg-4 col-sm-6">
+            <i class="bi bi-mask"></i>
+            <h3>valor 5</h3>
+            <p>Esse ipsam numquam quae ex tenetur! Ea consequuntur velit alias, dolores iure dolorum molestias molestiae tempora non accusantium vero. Asperiores minus tempore ea ipsa!</p>
+          </article>
+      </div>
+      </div>
+    </section>
+
+
+    
+
+    <footer id="eventos" class="padded">
+      <div class="circulo-fondo"></div>
+      <div class="container">
+        <h2>Eventos</h2>
+        <div class="row">
+          <!--article.col*3>h3{Evento $}+p>lorem32-->
+          <article class="col-lg-6">
+            <h3>Evento 1</h3>
+            <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lOCVs-1_j6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          </article>
+
+          <div class="col-lg">
+          <div class="row">
+          <article class="col-xl">
+            <h3>Evento 2</h3>
+            <p>Sint exercitationem, illo voluptas adipisci consequuntur amet aut sapiente quibusdam modi sed officiis optio fugit similique esse aperiam reiciendis dicta? Nobis a at quae dicta obcaecati officia tenetur in, animi laborum sunt.</p>
+          </article>
+          <article class="col-xl">
+            <h3>Evento 3</h3>
+            <p>Odio laudantium assumenda nesciunt cumque ut culpa similique dolore perspiciatis? Vitae magni enim tempore ea cum amet illum repudiandae laboriosam odit eum, voluptatum incidunt aut doloremque commodi quo nulla delectus laudantium quas?</p>
+          </article>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <section id="galeria" class="padded">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="row g-0">
+          <!--figure.col-2*12>img[src=fotos/foto$.jpg].img-fluid-->
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto1.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6 "><img src="fotos/foto2.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto3.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto4.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6 "><img src="fotos/foto5.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto6.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto7.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto8.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto9.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto10.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto11.jpg" alt="" class="img-fluid"></figure>
+          <figure class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="fotos/foto12.jpg" alt="" class="img-fluid"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactos" class="padded">
+       <div class="container">
+        <h2>Contáctanos</h2>
+        <div class="row">
+          <div class="col-lg">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nombre completo">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Correo electrónico">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Asunto">
+      </div>
+
+      <div class="mb-3">
+        <textarea rows="5" class="form-control" placeholder="Mensaje o comentario"></textarea>
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary" type="button">
+          Enviar mensaje
+        </button>
+      </div>
+          </div>
+          <div class="col-lg">
+            <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d353090.9301597504!2d-76.6698145932979!3d-12.102533535272013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1664480615376!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div>
+        </div>
+       </div>
+    </section>
+
+
+  <!--NUEVO-->
+<section id="mapa" class="padded">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>Mapa Perú</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae assumenda ratione laudantium illo aliquam, quia maiores consequatur sed dolores ut quis tenetur beatae, pariatur voluptatibus omnis ullam hic distinctio explicabo! Mollitia ducimus reprehenderit veniam beatae. Quis amet laboriosam nostrum nam maxime ipsum labore ipsam error inventore corporis voluptatibus consequuntur aperiam doloribus sint, ullam veritatis cumque et quod! Laboriosam asperiores perspiciatis dolorem officia provident dolores, iusto voluptatibus repellat, reiciendis rerum quam iure alias dolor id! Voluptatibus tempora architecto consectetur reprehenderit?</p>
+        <p>Ducimus reprehenderit nisi eaque ut? Magni assumenda explicabo inventore? Fuga nobis doloribus maxime magnam alias quod veniam odit fugiat ipsam mollitia sunt unde architecto accusantium aliquam eveniet, excepturi iste nihil quos repellendus? At, nihil quis, sapiente ea rerum similique assumenda blanditiis laboriosam reprehenderit delectus corrupti quasi? Accusamus, optio dolore? Repellendus quasi magnam eius consequuntur molestias, fugiat officia accusantium vel consequatur corporis maiores minima ipsum temporibus quae nisi fugit dolorum laudantium, dignissimos mollitia labore eligendi tempora repellat nostrum. Voluptates, accusamus nam.</p>
+        <p>Consectetur ratione laboriosam consequuntur perferendis voluptatum est et modi molestias itaque, eaque cumque debitis, quasi atque nemo iste earum sit suscipit facilis dolore enim! Inventore harum accusamus impedit officia quis cumque minus aspernatur nisi aperiam quidem at illum accusantium, blanditiis voluptates beatae sit perspiciatis exercitationem quae dicta sunt nemo? Labore aperiam harum mollitia at. Earum aut odit, eligendi minus beatae molestiae! Explicabo, blanditiis ad culpa porro doloribus non facere neque quis inventore nulla nihil laborum maiores provident atque excepturi ipsam.</p>
+        <p>Autem earum repudiandae itaque reiciendis dignissimos aliquam possimus labore, sed voluptatibus accusantium minima. Sequi fugit veritatis soluta quaerat doloremque officia maiores ipsa fuga harum, ipsum ad omnis error in similique corrupti quos voluptatibus veniam, cumque culpa consequatur optio quia rerum excepturi! Autem, corporis non a explicabo nesciunt, accusantium dolore odio id velit quo, libero nulla. Sequi id consequuntur, quibusdam amet pariatur cum deserunt ex a enim perspiciatis praesentium cumque, cupiditate veritatis possimus sed! Et porro voluptatibus aut repudiandae iste quidem.</p>
+        <p>Cum numquam in repellat porro nam. Nulla ab officiis quibusdam dolores, magni odio ipsam numquam aspernatur nobis, temporibus dignissimos sed, eaque non optio harum voluptates officia aut et inventore. Voluptatum laboriosam, non eum, expedita eveniet harum rem architecto adipisci, reiciendis asperiores corporis ipsam accusantium veritatis aliquam delectus fugiat voluptates dolorum tempora eius at repellat porro. Blanditiis nostrum sequi vero enim nihil explicabo quidem exercitationem quisquam asperiores neque nisi odio incidunt delectus, saepe ea qui ipsa illo doloremque adipisci aliquam ab.</p>
+      </div>
+      <div class="col">
+        <img src="images/pe.svg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HASTA ACA-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Juan</th>
+              <th>Valdivia</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>País</th>
+              <td>Colombia</td>
+            </tr>
+            <tr>
+              <th>Teléfono</th>
+              <td>624 -  35234</td>
+            </tr>
+            <tr>
+              <th>Deporte</th>
+              <td>Karate</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!--footer#main-footer>.container-->
+    <footer id="main-footer">
+      <div class="container">
+        2022- Todos los derechos reservados
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
